@@ -67,7 +67,7 @@ const SelectCharacter = ({ setCharacterNFT }) => {
           transformCharacterData(characterData)
         );
         //testnets.opensea.io/assets/[object Object]/2
-        https: setCharacters(characters);
+        setCharacters(characters);
       } catch (error) {
         console.error("Something went wrong fetching characters:", error);
       }

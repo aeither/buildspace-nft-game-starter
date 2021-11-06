@@ -17,7 +17,7 @@ const Arena = ({ characterNFT, setCharacterNFT }) => {
   /*
    * Toast state management
    */
-  const [showToast, setShowToast] = useState(false);
+  const [, setShowToast] = useState(false);
 
   const runAttackAction = async () => {
     try {
@@ -86,6 +86,7 @@ const Arena = ({ characterNFT, setCharacterNFT }) => {
         return { ...prevState, hp: bossHp };
       });
 
+      // eslint-disable-next-line
       setCharacterNFT((prevState) => {
         return { ...prevState, hp: playerHp };
       });
